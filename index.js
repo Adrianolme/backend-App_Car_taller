@@ -33,7 +33,7 @@ app.use('/api/users', userRoute);
 
 
 // Realizar petición de conexión a mongodb
-mongoose.connect('mongodb+srv://2311081556:gSZKV9yFsF5l2v9r@cluster0.dc7o9b9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/MyDatabase')
+mongoose.connect('mongodb+srv://2311081556:gSZKV9yFsF5l2v9r@cluster0.dc7o9b9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/test')
 .then( () => {
     console.log('Se estableció la conexión a base de datos exitosamente');
     app.listen( 3000, () => {
