@@ -16,6 +16,7 @@ app.use(cors());
 
 app.use('/api/citas', citaRoute);
 
+app.use('/api/users', userRoute);
 // Ruta por defecto
 app.get('/', (req, res) => {
     res.send('Bienvenido al servidor de APIs version 1.0.0');
@@ -28,7 +29,6 @@ app.get('/', (req, res) => {
 // D - delete -> delete
 
 // Endpoints para colección de usuarios
-app.use('/api/users', userRoute);
 
 
 
